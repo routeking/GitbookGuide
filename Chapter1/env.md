@@ -14,6 +14,6 @@
 
 安装完成之后就可以开始使用了，但是为了方便使用，建议再安装以下软件：
 
-* 文本编辑 Typora 下载地址：https://typora.io/
-* 版本管理 Git 下载地址：https://git-scm.com/downloads
-* 官方工具 GitBook 下载地址：
+* 文本编辑 Typora 下载地址：<https://typora.io/>
+* 版本管理 Git 下载地址：<https://git-scm.com/downloads>
+* 官方编辑器下载地址：<https://www.gitbook.com/editor>
