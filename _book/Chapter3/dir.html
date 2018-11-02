@@ -1,0 +1,469 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第三章：GitBook目录结构及说明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter4/cfg.html" />
+    
+    
+    <link rel="prev" href="../Chapter2/cli.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter1/env.html">
+            
+                <a href="../Chapter1/env.html">
+            
+                    
+                    第一章：环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter2/cli.html">
+            
+                <a href="../Chapter2/cli.html">
+            
+                    
+                    第二章：GitBook CLI常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="dir.html">
+            
+                <a href="dir.html">
+            
+                    
+                    第三章：GitBook目录结构及说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter4/cfg.html">
+            
+                <a href="../Chapter4/cfg.html">
+            
+                    
+                    第四章：GitBook配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5/plugin.html">
+            
+                <a href="../Chapter5/plugin.html">
+            
+                    
+                    第五章：GitBook插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter6/deploy.html">
+            
+                <a href="../Chapter6/deploy.html">
+            
+                    
+                    第六章：GitBook部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter7/release.html">
+            
+                <a href="../Chapter7/release.html">
+            
+                    
+                    第七章：GitBook打包发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第三章：GitBook目录结构及说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E09;&#x7AE0;&#xFF1A;gitbook&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x53CA;&#x8BF4;&#x660E;">&#x7B2C;&#x4E09;&#x7AE0;&#xFF1A;GitBook&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x53CA;&#x8BF4;&#x660E;</h1>
+<p>GitBook &#x57FA;&#x672C;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>.
+&#x251C;&#x2500;&#x2500; book.json
+&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; SUMMARY.md
+&#x251C;&#x2500;&#x2500; chapter-1/
+|   &#x251C;&#x2500;&#x2500; README.md
+|   &#x2514;&#x2500;&#x2500; something.md
+&#x2514;&#x2500;&#x2500; chapter-2/
+    &#x251C;&#x2500;&#x2500; README.md
+    &#x2514;&#x2500;&#x2500; something.md
+</code></pre><ul>
+<li>book.json&#x7528;&#x6765;&#x653E;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</li>
+<li>SUMMARY.md&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x4E66;&#x672C;&#x7684;&#x7ED3;&#x6784;</li>
+</ul>
+<h2 id="bookjson-&#x4ECB;&#x7ECD;">book.json &#x4ECB;&#x7ECD;</h2>
+<p>&#x5178;&#x578B;&#x7684;&#x914D;&#x7F6E;&#x4E3E;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-JSON">{
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Blankj&apos;s Glory&quot;</span>,
+    <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;Blankj&quot;</span>,
+    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;select * from learn&quot;</span>,
+    <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;zh-hans&quot;</span>,
+    <span class="hljs-string">&quot;gitbook&quot;</span>: <span class="hljs-string">&quot;3.2.3&quot;</span>,
+    <span class="hljs-string">&quot;styles&quot;</span>: {
+        <span class="hljs-string">&quot;website&quot;</span>: <span class="hljs-string">&quot;./styles/website.css&quot;</span>
+    },
+    <span class="hljs-string">&quot;structure&quot;</span>: {
+        <span class="hljs-string">&quot;readme&quot;</span>: <span class="hljs-string">&quot;README.md&quot;</span>
+    },
+    <span class="hljs-string">&quot;links&quot;</span>: {
+        <span class="hljs-string">&quot;sidebar&quot;</span>: {
+            <span class="hljs-string">&quot;&#x6211;&#x7684;&#x72D7;&#x7A9D;&quot;</span>: <span class="hljs-string">&quot;https://blankj.com&quot;</span>
+        }
+    },
+    <span class="hljs-string">&quot;plugins&quot;</span>: [
+        <span class="hljs-string">&quot;-sharing&quot;</span>,
+        <span class="hljs-string">&quot;splitter&quot;</span>,
+        <span class="hljs-string">&quot;expandable-chapters-small&quot;</span>,
+        <span class="hljs-string">&quot;anchors&quot;</span>,
+
+        <span class="hljs-string">&quot;github&quot;</span>,
+        <span class="hljs-string">&quot;github-buttons&quot;</span>,
+        <span class="hljs-string">&quot;donate&quot;</span>,
+        <span class="hljs-string">&quot;sharing-plus&quot;</span>,
+        <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>,
+        <span class="hljs-string">&quot;favicon&quot;</span>
+    ],
+    <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
+        <span class="hljs-string">&quot;github&quot;</span>: {
+            <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://github.com/routeking&quot;</span>
+        },
+        <span class="hljs-string">&quot;github-buttons&quot;</span>: {
+            <span class="hljs-string">&quot;buttons&quot;</span>: [{
+                <span class="hljs-string">&quot;user&quot;</span>: <span class="hljs-string">&quot;Blankj&quot;</span>,
+                <span class="hljs-string">&quot;repo&quot;</span>: <span class="hljs-string">&quot;glory&quot;</span>,
+                <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;star&quot;</span>,
+                <span class="hljs-string">&quot;size&quot;</span>: <span class="hljs-string">&quot;small&quot;</span>,
+                <span class="hljs-string">&quot;count&quot;</span>: <span class="hljs-literal">true</span>
+                }
+            ]
+        },
+        <span class="hljs-string">&quot;donate&quot;</span>: {
+            <span class="hljs-string">&quot;alipay&quot;</span>: <span class="hljs-string">&quot;./source/images/donate.png&quot;</span>,
+            <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+            <span class="hljs-string">&quot;button&quot;</span>: <span class="hljs-string">&quot;&#x8D5E;&#x8D4F;&quot;</span>,
+            <span class="hljs-string">&quot;alipayText&quot;</span>: <span class="hljs-string">&quot; &quot;</span>
+        },
+        <span class="hljs-string">&quot;sharing&quot;</span>: {
+            <span class="hljs-string">&quot;douban&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;facebook&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;google&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;hatenaBookmark&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;instapaper&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;line&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;linkedin&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;messenger&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;pocket&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;qq&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;qzone&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;stumbleupon&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;twitter&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;viber&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;vk&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;weibo&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;whatsapp&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;all&quot;</span>: [
+                <span class="hljs-string">&quot;google&quot;</span>, <span class="hljs-string">&quot;facebook&quot;</span>, <span class="hljs-string">&quot;weibo&quot;</span>, <span class="hljs-string">&quot;twitter&quot;</span>,
+                <span class="hljs-string">&quot;qq&quot;</span>, <span class="hljs-string">&quot;qzone&quot;</span>, <span class="hljs-string">&quot;linkedin&quot;</span>, <span class="hljs-string">&quot;pocket&quot;</span>
+            ]
+        },
+        <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>: {
+            <span class="hljs-string">&quot;showLevel&quot;</span>: <span class="hljs-literal">false</span>
+        },
+        <span class="hljs-string">&quot;favicon&quot;</span>:{
+            <span class="hljs-string">&quot;shortcut&quot;</span>: <span class="hljs-string">&quot;./source/images/favicon.jpg&quot;</span>,
+            <span class="hljs-string">&quot;bookmark&quot;</span>: <span class="hljs-string">&quot;./source/images/favicon.jpg&quot;</span>,
+            <span class="hljs-string">&quot;appleTouch&quot;</span>: <span class="hljs-string">&quot;./source/images/apple-touch-icon.jpg&quot;</span>,
+            <span class="hljs-string">&quot;appleTouchMore&quot;</span>: {
+                <span class="hljs-string">&quot;120x120&quot;</span>: <span class="hljs-string">&quot;./source/images/apple-touch-icon.jpg&quot;</span>,
+                <span class="hljs-string">&quot;180x180&quot;</span>: <span class="hljs-string">&quot;./source/images/apple-touch-icon.jpg&quot;</span>
+            }
+        }
+    }
+}
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x9879;&#x610F;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>title &#x672C;&#x4E66;&#x6807;&#x9898;</li>
+<li>author &#x672C;&#x4E66;&#x4F5C;&#x8005;</li>
+<li>description &#x672C;&#x4E66;&#x63CF;&#x8FF0;</li>
+<li>language &#x672C;&#x4E66;&#x8BED;&#x8A00;&#xFF0C;&#x4E2D;&#x6587;&#x8BBE;&#x7F6E; &quot;zh-hans&quot; &#x5373;&#x53EF;</li>
+<li>gitbook &#x6307;&#x5B9A;&#x4F7F;&#x7528;&#x7684; GitBook &#x7248;&#x672C;</li>
+<li>styles &#x81EA;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x6837;&#x5F0F;</li>
+<li>structure &#x6307;&#x5B9A; Readme&#x3001;Summary&#x3001;Glossary &#x548C; Languages &#x5BF9;&#x5E94;&#x7684;&#x6587;&#x4EF6;&#x540D;</li>
+<li>links &#x5728;&#x5DE6;&#x4FA7;&#x5BFC;&#x822A;&#x680F;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;&#x4FE1;&#x606F;</li>
+<li>plugins &#x914D;&#x7F6E;&#x4F7F;&#x7528;&#x7684;&#x63D2;&#x4EF6;</li>
+<li>pluginsConfig &#x914D;&#x7F6E;&#x63D2;&#x4EF6;&#x7684;&#x5C5E;&#x6027;</li>
+</ul>
+<h2 id="summarymd&#x6587;&#x4EF6;&#x4ECB;&#x7ECD;">SUMMARY.md&#x6587;&#x4EF6;&#x4ECB;&#x7ECD;</h2>
+<p>&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x51B3;&#x5B9A; GitBook &#x7684;&#x7AE0;&#x8282;&#x76EE;&#x5F55;&#xFF0C;&#x5B83;&#x901A;&#x8FC7; Markdown &#x4E2D;&#x7684;&#x5217;&#x8868;&#x8BED;&#x6CD5;&#x6765;&#x8868;&#x793A;&#x6587;&#x4EF6;&#x7684;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-Markdown"><span class="hljs-bullet">* </span>[<span class="hljs-string">Introduction</span>](<span class="hljs-link">README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Part I</span>](<span class="hljs-link">part1/README.md</span>)
+<span class="hljs-code">    * [Writing is nice](part1/writing.md)</span>
+<span class="hljs-code">    * [GitBook is nice](part1/gitbook.md)</span>
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Part II</span>](<span class="hljs-link">part2/README.md</span>)
+<span class="hljs-code">    * [We love feedback](part2/feedback_please.md)</span>
+<span class="hljs-code">    * [Better tools for authors](part2/better_tools.md)</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4F7F;&#x7528; &#x6807;&#x9898; &#x6216;&#x8005; &#x6C34;&#x5E73;&#x5206;&#x5272;&#x7EBF; &#x5C06; GitBook &#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-Markdown"><span class="hljs-section">### Part I</span>
+
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Introduction</span>](<span class="hljs-link">README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Writing is nice</span>](<span class="hljs-link">part1/writing.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">GitBook is nice</span>](<span class="hljs-link">part1/gitbook.md</span>)
+
+<span class="hljs-section">### Part II</span>
+
+<span class="hljs-bullet">* </span>[<span class="hljs-string">We love feedback</span>](<span class="hljs-link">part2/feedback_please.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Better tools for authors</span>](<span class="hljs-link">part2/better_tools.md</span>)
+
+---
+
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Last part without title</span>](<span class="hljs-link">part3/title.md</span>)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter2/cli.html" class="navigation navigation-prev " aria-label="Previous page: 第二章：GitBook CLI常用命令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter4/cfg.html" class="navigation navigation-next " aria-label="Next page: 第四章：GitBook配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第三章：GitBook目录结构及说明","level":"1.4","depth":1,"next":{"title":"第四章：GitBook配置","level":"1.5","depth":1,"path":"Chapter4/cfg.md","ref":"Chapter4/cfg.md","articles":[]},"previous":{"title":"第二章：GitBook CLI常用命令","level":"1.3","depth":1,"path":"Chapter2/cli.md","ref":"Chapter2/cli.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter3/dir.md","mtime":"2018-11-02T07:48:46.156Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-02T07:51:12.552Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
